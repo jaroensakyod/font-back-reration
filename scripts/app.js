@@ -54,7 +54,7 @@ createButton.addEventListener(`click`, async() =>{
           }
 
           try{
-                    const {data} = await axios.post('http://localhost:3030/product', {name, price})
+                    const {data} = await axios.post('https://aapciproducy-a9b38f3e6749.herokuapp.com/product', {name, price})
                     if (data.success){
                               await fetchProducts()
                     }
