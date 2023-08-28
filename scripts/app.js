@@ -1,6 +1,6 @@
 const fetchProducts = async () => {
           try{
-                    const {data} = await axios.get('http://localhost:3030/product')
+                    const {data} = await axios.get('https://aapciproducy-a9b38f3e6749.herokuapp.com/product')
                     addProductToTable(data.data)
                     
           } catch(error) {
